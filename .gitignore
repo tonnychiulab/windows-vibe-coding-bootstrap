@@ -1,0 +1,22 @@
+# Credentials and local secrets
+.env
+.env.*
+!.env.example
+*.secret
+*.secret.*
+*.token
+*.token.*
+
+# PSES and local runtime state
+session.json
+logs/
+
+# PowerShell/editor temporary files
+*.psm1~
+*.ps1~
+.vscode/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
