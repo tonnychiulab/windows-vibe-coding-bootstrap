@@ -9,6 +9,11 @@ if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
     throw 'winget was not found. Install or update App Installer, then reopen PowerShell.'
 }
 
+# Include persistent Machine/User PATH values so existing installs are detected.
+$machinePath = [Environment]::GetEnvironmentVariable('Path', 'Machine')
+$userPath = [Environment]::GetEnvironmentVariable('Path', 'User')
+$env:Path = "$machinePath;$userPath"
+
 $packages = @(
     [pscustomobject]@{ Command = 'git';    Id = 'Git.Git';                  Name = 'Git' }
     [pscustomobject]@{ Command = 'gh';     Id = 'GitHub.cli';                Name = 'GitHub CLI' }
