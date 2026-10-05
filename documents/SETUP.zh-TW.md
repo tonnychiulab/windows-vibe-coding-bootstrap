@@ -177,3 +177,9 @@ winget source update
 `git`, `gh`, `jq`, `node`, `npm`, `python`, `uv`, `pnpm`, `rg`, `fd`, `fzf`, `delta`, `just`, `bat`, `7z`。
 
 版本會隨時間變更；以 `Verify-Environment.ps1` 的實際輸出為準。
+
+## 11. 來源致謝
+
+本基線設定參考 **nczz** 的 [「Oh My Pi (omp) Windows 安裝 SOP」](https://gist.github.com/nczz/94e62110ec183a49909c054f61ba10a4)。感謝 **nczz** 整理 Windows/PowerShell 前置套件順序、WinGet 參數、PATH 行為與 native addon 常見問題。
+
+本文件將相關想法延伸為通用、可重複執行的 Windows 開發環境基線，並非該 Gist 的官方 fork。

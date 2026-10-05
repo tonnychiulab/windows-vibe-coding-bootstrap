@@ -30,6 +30,15 @@ Not included / 不包含：
 - Docker, Visual Studio Build Tools, or vendor-specific AI CLIs unless a project requires them
 - Git identity or GitHub authentication automation
 
+## Attribution / 來源致謝
+
+This baseline was inspired by [nczz's “Oh My Pi (omp) Windows 安裝 SOP”](https://gist.github.com/nczz/94e62110ec183a49909c054f61ba10a4). Thanks to **nczz** for documenting the Windows/PowerShell prerequisite order, WinGet flags, PATH behavior, and common native-addon troubleshooting points.
+
+本基線設定參考 **nczz** 的 [「Oh My Pi (omp) Windows 安裝 SOP」](https://gist.github.com/nczz/94e62110ec183a49909c054f61ba10a4)。感謝 **nczz** 整理 Windows/PowerShell 前置套件順序、WinGet 參數、PATH 行為與 native addon 常見問題。
+
+This repository generalizes that idea into a reusable development baseline; it is not an official fork of the referenced Gist. / 本儲存庫將該想法整理成可重複使用的開發環境基線，並非該 Gist 的官方 fork。
+
+
 ## Quick start / 快速開始
 
 Run from an elevated or normal PowerShell window as appropriate for your machine:

@@ -177,3 +177,9 @@ The original workstation setup verified these commands as available:
 `git`, `gh`, `jq`, `node`, `npm`, `python`, `uv`, `pnpm`, `rg`, `fd`, `fzf`, `delta`, `just`, `bat`, `7z`.
 
 Versions change over time; use the output of `Verify-Environment.ps1` as the source of truth.
+
+## 11. Attribution
+
+This baseline was inspired by [nczz's “Oh My Pi (omp) Windows 安裝 SOP”](https://gist.github.com/nczz/94e62110ec183a49909c054f61ba10a4). Thanks to **nczz** for documenting the Windows/PowerShell prerequisite order, WinGet flags, PATH behavior, and common native-addon troubleshooting points.
+
+This guide generalizes those ideas into a reusable Windows development baseline; it is not an official fork of the referenced Gist.
